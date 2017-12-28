@@ -26,7 +26,7 @@ namespace WpfApp1
 		public MainWindow()
 		{
 			InitializeComponent();
-			InitGrid();
+			//InitGrid();
 			CreateBlocks();
 		}
 
@@ -41,8 +41,8 @@ namespace WpfApp1
 					block.Height = block.Width = 60;
 					game.matr[i, j] = block;
 					block.onClick += game.OnClick;
-					Grid.SetRow(block, i);
-					Grid.SetColumn(block, j);
+					Grid.SetRow(block, i + i / 3);
+					Grid.SetColumn(block, j + j / 3);
 					grid.Children.Add(block);
 				}
 			}

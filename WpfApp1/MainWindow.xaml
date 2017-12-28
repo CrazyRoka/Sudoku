@@ -4,15 +4,42 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
-        xmlns:SudokuBlock="clr-namespace:SudokuBlock;assembly=WpfControlLibrary1" x:Class="WpfApp1.MainWindow"
+        xmlns:SudokuBlock="clr-namespace:SudokuBlock;assembly=WpfControlLibrary1" xmlns:SudokuBlock1="clr-namespace:SudokuBlock;assembly=SudokuBlock" x:Class="WpfApp1.MainWindow"
         mc:Ignorable="d"
-        Title="SudokyByRoka" Height="663.725" Width="577.189" ResizeMode="NoResize" Icon="71cg+fcdDdL.png">
+        Title="SudokyByRoka" Height="710" Width="610.75" ResizeMode="NoResize" Icon="71cg+fcdDdL.png">
     <Grid>
-        <Grid x:Name="grid" Height="540" Margin="10,10,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="540" IsEnabled="False"/>
-        <Slider x:Name="slider" Height="20" Margin="198,576,198,0" VerticalAlignment="Top" Value="5"/>
-        <Button Content="Start New Game" HorizontalAlignment="Left" Height="50" Margin="449,560,0,0" VerticalAlignment="Top" Width="101" Click="StartGame"/>
-        <Button Content="Restart" HorizontalAlignment="Left" Height="50" Margin="10,560,0,0" VerticalAlignment="Top" Width="76" Click="Restart"/>
-        <Label Content="Складність" Margin="252,550,250,0" VerticalAlignment="Top"/>
+        <Grid x:Name="grid" Height="560" Margin="10,10,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="560" IsEnabled="False" Background="Gray">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="60" />
+                <ColumnDefinition Width="60" />
+                <ColumnDefinition Width="60" />
+                <ColumnDefinition Width="10" />
+                <ColumnDefinition Width="60" />
+                <ColumnDefinition Width="60" />
+                <ColumnDefinition Width="60" />
+                <ColumnDefinition Width="10" />
+                <ColumnDefinition Width="60" />
+                <ColumnDefinition Width="60" />
+                <ColumnDefinition Width="60" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="60" />
+                <RowDefinition Height="60" />
+                <RowDefinition Height="60" />
+                <RowDefinition Height="10" />
+                <RowDefinition Height="60" />
+                <RowDefinition Height="60" />
+                <RowDefinition Height="60" />
+                <RowDefinition Height="10" />
+                <RowDefinition Height="60" />
+                <RowDefinition Height="60" />
+                <RowDefinition Height="60" />
+            </Grid.RowDefinitions>
+        </Grid>
+        <Slider x:Name="slider" Height="20" Margin="202,609,203,0" VerticalAlignment="Top" Value="5" RenderTransformOrigin="0.332,6.2"/>
+        <Button Content="Start New Game" HorizontalAlignment="Left" Height="50" Margin="469,583,0,0" VerticalAlignment="Top" Width="101" Click="StartGame" RenderTransformOrigin="0.515,1.24"/>
+        <Button Content="Restart" HorizontalAlignment="Left" Height="50" Margin="10,583,0,0" VerticalAlignment="Top" Width="76" Click="Restart"/>
+        <Label Content="Складність" Margin="268,578,267,0" VerticalAlignment="Top" RenderTransformOrigin="2.557,0.577"/>
 
     </Grid>
 </Window>
