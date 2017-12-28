@@ -21,12 +21,12 @@ namespace WpfApp1
 	/// </summary>
 	public partial class MainWindow : Window
 	{
-		private Sudoku.Game game = new Sudoku.Game();
+		private Sudoku.Game game;
 
 		public MainWindow()
 		{
 			InitializeComponent();
-			//InitGrid();
+			game = new Sudoku.Game();
 			CreateBlocks();
 		}
 
@@ -45,19 +45,6 @@ namespace WpfApp1
 					Grid.SetColumn(block, j + j / 3);
 					grid.Children.Add(block);
 				}
-			}
-		}
-
-		private void InitGrid()
-		{
-			for (int i = 0; i < 9; i++)
-			{
-				grid.ColumnDefinitions.Add(new ColumnDefinition());
-			}
-
-			for (int i = 0; i < 9; i++)
-			{
-				grid.RowDefinitions.Add(new RowDefinition());
 			}
 		}
 

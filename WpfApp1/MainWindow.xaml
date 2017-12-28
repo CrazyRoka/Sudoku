@@ -39,7 +39,7 @@
         <Slider x:Name="slider" Height="20" Margin="202,609,203,0" VerticalAlignment="Top" Value="5" RenderTransformOrigin="0.332,6.2"/>
         <Button Content="Start New Game" HorizontalAlignment="Left" Height="50" Margin="469,583,0,0" VerticalAlignment="Top" Width="101" Click="StartGame" RenderTransformOrigin="0.515,1.24"/>
         <Button Content="Restart" HorizontalAlignment="Left" Height="50" Margin="10,583,0,0" VerticalAlignment="Top" Width="76" Click="Restart"/>
-        <Label Content="Складність" Margin="268,578,267,0" VerticalAlignment="Top" RenderTransformOrigin="2.557,0.577"/>
+        <Label Content="Складність" Margin="256,578,256,0" VerticalAlignment="Top" RenderTransformOrigin="2.557,0.577"/>
 
     </Grid>
 </Window>
