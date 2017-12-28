@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:WpfApp1"
         xmlns:SudokuBlock="clr-namespace:SudokuBlock;assembly=WpfControlLibrary1" xmlns:SudokuBlock1="clr-namespace:SudokuBlock;assembly=SudokuBlock" x:Class="WpfApp1.MainWindow"
         mc:Ignorable="d"
-        Title="SudokyByRoka" Height="710" Width="610.75" ResizeMode="NoResize" Icon="71cg+fcdDdL.png">
+        Title="SudokyByRoka" Height="675" Width="589.75" ResizeMode="NoResize" Icon="71cg+fcdDdL.png">
     <Grid>
         <Grid x:Name="grid" Height="560" Margin="10,10,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="560" IsEnabled="False" Background="Gray">
             <Grid.ColumnDefinitions>
